@@ -1,0 +1,42 @@
+<h2 align="center" style=color:#AD8C08>Share Ride</h2>
+<form action="http://www.google.com" id="ContactUsCaptchaWebForm" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm){
+if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();  return false;}
+else if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();   return false;}
+else if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();  return false;}
+else if (frm.Comments.value == "") {alert('Please enter comments or questions.');frm.Comments.focus(); return false;}
+else{
+alert('Ride published successfully.');
+}
+}
+</script>
+<table border="0" cellpadding="5" cellspacing="0" width="600">
+<tr>
+<td><b>Name*:</b></td>
+<td><input name="Name" type="text" maxlength="60" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Phone number:</b></td>
+<td><input name="PhoneNumber" type="text" maxlength="43" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Email address*:</b></td>
+<td><input name="FromEmailAddress" type="text" maxlength="60" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Source*:</b></td>
+<td><input name="FromProjectName" type="text" maxlength="100" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Destination*:</b></td>
+<td><input name="FromPMName" type="text" maxlength="60" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Ride Date/Time:</b></td>
+<td><input name="FromMV1" type="text" maxlength="100" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Additional Information*:</b></td>
+<td><textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea></td>
+</tr><tr>
+</table> <br />
+* - required fields. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input name="skip_Submit" type="submit" value="Publish Ride" />
+</td></tr>
+</table><br />
+</form>
