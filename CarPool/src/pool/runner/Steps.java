@@ -14,7 +14,7 @@ import cucumber.api.java.en.When;
 public class Steps {
 	
 	private WebDriver driver;
-	private boolean acceptNextAlert = true;
+	private boolean acceptNextAlert=true;
 	
 	@Given("^User enters \"([^\"]*)\" as input in Email Address in quick post.$")
 	public void User_enters_as_input_in_Email_Address_in_quick_post(String arg1) throws Throwable {
